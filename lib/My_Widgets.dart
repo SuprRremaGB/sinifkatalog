@@ -31,9 +31,10 @@ class Row_Container extends StatelessWidget {
 }
 
 class List_Container extends StatelessWidget {
-  List_Container(@required this.metin);
+  List_Container(@required this.metin , this.resim);
 
   final String metin;
+  final String resim;
 
   @override
   Widget build(BuildContext context) {
@@ -52,9 +53,9 @@ class List_Container extends StatelessWidget {
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                SizedBox(width: 10),
-               /* CircleAvatar(child: AssetImage(""),),*/
-                SizedBox(width: 15),
+                SizedBox(width: 30),
+                CircleAvatar(child: Image.network(resim),maxRadius: 50,),
+                SizedBox(width: 50),
                 Text(metin, style: TextStyle(fontSize: 16)),
               ],
             ),
@@ -64,8 +65,4 @@ class List_Container extends StatelessWidget {
     );
   }
 }
-
-
-
-
-
+/* https://otuzoglu.com/ftpalper/ogrenc_resimler/12-D/277.png */
