@@ -44,7 +44,7 @@ class List_Container extends StatelessWidget {
         color: Colors.white,
       ),
       width: double.infinity,
-      height: 150,
+      height: 300,
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
@@ -54,9 +54,9 @@ class List_Container extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 SizedBox(width: 30),
-                CircleAvatar(child: Image.network(resim),maxRadius: 50,),
-                SizedBox(width: 50),
-                Text(metin, style: TextStyle(fontSize: 16)),
+                Image.asset(resim),
+                SizedBox(width: 30),
+                Text(metin, style: TextStyle(fontSize: 20)),
               ],
             ),
           ),

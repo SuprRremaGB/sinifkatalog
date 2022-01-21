@@ -178,8 +178,8 @@ class _MyHomePageState extends State<MyHomePage> {
           Expanded(
             child: ListView(
               children: [
-                List_Container("Alper Alp","https://otuzoglu.com/ftpalper/ogrenc_resimler/12-D/277.png"),
-                List_Container("Görkam Buzdere",""),
+                List_Container("Alper Alp","images/12-D/277.JPG"),
+                List_Container("Görkem Buzdere",""),
                 List_Container("Erdal Enes Kara",""),
                 List_Container("İbrahim Özkaracan",""),
                 List_Container("Yunus Erkan",""),
